@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Builder App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🍕 Pizza Builder</h1>
+      <p>Build your pizza step by step</p>
+    </header>
+
+    <main>
+      <!-- Step 1: Choose Pizza -->
+      <section class="step" id="step1">
+        <h2>Step 1: Choose Your Pizza</h2>
+        <div class="pizza-options">
+          <div
+            class="pizza-card"
+            data-pizza="Cheese"
+            data-img="images/cheese-pizza.png"
+          >
+            <img src="images/cheese-pizza.png" alt="Cheese Pizza" />
+            <p>Cheese Pizza</p>
+          </div>
+          <div
+            class="pizza-card"
+            data-pizza="Veg"
+            data-img="images/veg-pizza.png"
+          >
+            <img src="images/veg-pizza.png" alt="Veg Pizza" />
+            <p>Veg Pizza</p>
+          </div>
+          <div
+            class="pizza-card"
+            data-pizza="Pepperoni"
+            data-img="images/pepperoni-pizza.png"
+          >
+            <img src="images/pepperoni-pizza.png" alt="Pepperoni Pizza" />
+            <p>Pepperoni Pizza</p>
+          </div>
+          <div
+            class="pizza-card"
+            data-pizza="Supreme"
+            data-img="images/supreme-pizza.png"
+          >
+            <img src="images/supreme-pizza.png" alt="Supreme Pizza" />
+            <p>Supreme Pizza</p>
+          </div>
+        </div>
+        <button class="next-btn" data-next="step2">Next ➡</button>
+      </section>
+
+      <!-- Step 2: Choose Size -->
+      <section class="step hidden" id="step2">
+        <h2>Step 2: Select Pizza Size</h2>
+        <select id="pizzaSize">
+          <option value="Small">Small - ₹200</option>
+          <option value="Medium">Medium - ₹350</option>
+          <option value="Large">Large - ₹500</option>
+        </select>
+        <button class="next-btn" data-next="step3">Next ➡</button>
+      </section>
+
+      <!-- Step 3: Choose Toppings -->
+      <section class="step hidden" id="step3">
+        <h2>Step 3: Choose Toppings</h2>
+        <div class="toppings">
+          <label
+            ><input type="checkbox" value="Mushrooms" /> 🍄 Mushrooms</label
+          >
+          <label><input type="checkbox" value="Olives" /> 🫒 Olives</label>
+          <label><input type="checkbox" value="Onions" /> 🧅 Onions</label>
+          <label><input type="checkbox" value="Capsicum" /> 🫑 Capsicum</label>
+          <label
+            ><input type="checkbox" value="Sweet Corn" /> 🌽 Sweet Corn</label
+          >
+          <label><input type="checkbox" value="Paneer" /> 🧊 Paneer</label>
+          <label
+            ><input type="checkbox" value="Jalapenos" /> 🌶️ Jalapenos</label
+          >
+          <label
+            ><input type="checkbox" value="Extra Cheese" /> 🧀 Extra
+            Cheese</label
+          >
+        </div>
+        <button class="next-btn" data-next="step4">Next ➡</button>
+      </section>
+
+      <!-- Step 4: Payment -->
+      <section class="step hidden" id="step4">
+        <h2>Step 4: Choose Payment</h2>
+        <select id="paymentMethod">
+          <option value="Card">Credit/Debit Card</option>
+          <option value="UPI">UPI</option>
+          <option value="COD">Cash on Delivery</option>
+        </select>
+        <button id="placeOrderBtn">✅ Place Order</button>
+      </section>
+
+      <!-- Order Summary -->
+      <section class="summary hidden" id="orderSummary">
+        <h2>Order Summary</h2>
+        <img id="finalPizzaImg" src="images/pizza-base.png" alt="Final Pizza" />
+        <p id="summaryDetails"></p>
+        <p class="success">🎉 Your order has been placed successfully!</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Pizza Builder App • Builder Pattern</p>
+    </footer>
+
+    <script src="pizza.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50; /* Changed Header Color */
+  color: white;
+}
+h1 {
+  margin: 0;
+}
+main {
+  padding: 20px;
+}
+h2 {
+  color: #e67e22;
+}
+
+.step {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.hidden {
+  display: none;
+}
+
+.pizza-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.pizza-card {
+  flex: 1 1 150px;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pizza-card img {
+  width: 120px;
+  height: auto;
+}
+.pizza-card:hover {
+  border-color: #e67e22;
+  transform: scale(1.05);
+}
+
+.next-btn,
+#placeOrderBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.next-btn:hover,
+#placeOrderBtn:hover {
+  background: #219150;
+}
+
+.toppings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.toppings label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f4f4f4;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.toppings img {
+  width: 25px;
+  height: 25px;
+}
+
+.summary {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.summary img {
+  width: 200px;
+  margin: 15px 0;
+}
+.success {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #2c3e50;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.toppings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.toppings label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.toppings input {
+  transform: scale(1.2);
+}
